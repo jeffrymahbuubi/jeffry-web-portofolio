@@ -1,0 +1,99 @@
+body {
+  background-color: hsl(31, 45%, 90%);
+}
+
+.navigation div {
+  position: absolute;
+  width: 1927px;
+  height: 63px;
+  left: -7px;
+  top: 0px;
+  background-color: hsl(32, 46%, 93%);
+}
+
+.navigation span {
+  font-family: "M Plus 1 Code", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: hsl(0, 0%, 0%);
+  position: absolute;
+  width: 153.51px;
+  height: 22px;
+  left: 613.11px;
+  top: 20px;
+}
+
+.navigation img {
+  position: absolute;
+  width: 40px;
+  height: 22px;
+  left: 566px;
+  top: 20px;
+}
+
+.navigation a {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline;
+}
+
+.navigation .works {
+  position: absolute;
+  width: 67.67px;
+  height: 19px;
+  left: 791.88px;
+  top: 19px;
+  line-height: 22px;
+  letter-spacing: -0.005em;
+}
+
+.navigation .posts {
+  position: absolute;
+  width: 67.67px;
+  height: 19px;
+  left: 862.57px;
+  top: 19px;
+}
+
+.navigation .uses {
+  position: absolute;
+  width: 67.67px;
+  height: 19px;
+  left: 926.2px;
+  top: 19px;
+}
+
+.navigation .source-code {
+  position: absolute;
+  width: 86.86px;
+  height: 20px;
+  left: 987.81px;
+  top: 19px;
+}
+
+.navigation button {
+  position: absolute;
+  width: 41.41px;
+  height: 41px;
+  left: 1300.9px;
+  top: 11px;
+  border-radius: 6px;
+  background: hsl(256, 57%, 60%);
+  background-image: url(assets/icons/moon-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  mask-image: url(assets/icons/moon-solid.svg);
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
