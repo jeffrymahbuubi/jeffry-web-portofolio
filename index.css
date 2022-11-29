@@ -1,5 +1,6 @@
 body {
   background-color: hsl(31, 45%, 90%);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .navigation div {
@@ -86,14 +87,14 @@ body {
   left: 1300.9px;
   top: 11px;
   border-radius: 6px;
-  background: hsl(256, 57%, 60%);
-  background-image: url(assets/icons/moon-solid.svg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  mask-image: url(assets/icons/moon-solid.svg);
 }
 
 .navigation a:hover {
   text-decoration: underline;
+}
+
+.navigation .color-mode-button {
+  background: hsl(300, 70%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
 }
