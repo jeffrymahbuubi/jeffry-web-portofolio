@@ -3,8 +3,21 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.header div {
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header .header-content {
   background-color: hsl(32, 46%, 93%);
+  display: flex;
+  align-items: center;
+}
+
+.header .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .header span {
