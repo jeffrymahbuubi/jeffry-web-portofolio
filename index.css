@@ -12,6 +12,7 @@ body {
   background-color: hsl(32, 46%, 93%);
   display: flex;
   align-items: center;
+  padding: 1rem;
 }
 
 .header .header-logo {
@@ -69,4 +70,16 @@ body {
   background: hsl(300, 70%, 20%);
   color: hsl(0, 0%, 100%);
   border: none;
+  width: 35px;
+  height: 35px;
+}
+
+.header .navigation {
+  margin-right: 1rem;
+}
+
+.header .navigation-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
