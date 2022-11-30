@@ -1,37 +1,37 @@
 body {
   background-color: hsl(31, 45%, 90%);
+  font-family: "Noto Sans", sans-serif;
 }
 
-.navigation div {
-  position: absolute;
-  width: 1927px;
-  height: 63px;
-  left: -7px;
-  top: 0px;
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header .header-content {
   background-color: hsl(32, 46%, 93%);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 
-.navigation span {
+.header .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header span {
   font-family: "M Plus 1 Code", sans-serif;
   font-style: normal;
   font-weight: 600;
   color: hsl(0, 0%, 0%);
-  position: absolute;
-  width: 153.51px;
-  height: 22px;
-  left: 613.11px;
-  top: 20px;
 }
 
-.navigation img {
-  position: absolute;
-  width: 40px;
-  height: 22px;
-  left: 566px;
-  top: 20px;
+.header img {
 }
 
-.navigation a {
+.header a {
   font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -40,60 +40,46 @@ body {
   color: hsl(0, 0%, 0%);
 }
 
-.navigation li {
+.header li {
   list-style-type: none;
   display: inline;
 }
 
-.navigation .works {
-  position: absolute;
-  width: 67.67px;
-  height: 19px;
-  left: 791.88px;
-  top: 19px;
+.header .works {
   line-height: 22px;
-  letter-spacing: -0.005em;
 }
 
-.navigation .posts {
-  position: absolute;
-  width: 67.67px;
-  height: 19px;
-  left: 862.57px;
-  top: 19px;
+.header .posts {
 }
 
-.navigation .uses {
-  position: absolute;
-  width: 67.67px;
-  height: 19px;
-  left: 926.2px;
-  top: 19px;
+.header .uses {
 }
 
-.navigation .source-code {
-  position: absolute;
-  width: 86.86px;
-  height: 20px;
-  left: 987.81px;
-  top: 19px;
+.header .source-code {
 }
 
-.navigation button {
-  position: absolute;
-  width: 41.41px;
-  height: 41px;
-  left: 1300.9px;
-  top: 11px;
+.header button {
   border-radius: 6px;
-  background: hsl(256, 57%, 60%);
-  background-image: url(assets/icons/moon-solid.svg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  mask-image: url(assets/icons/moon-solid.svg);
 }
 
-.navigation a:hover {
+.header a:hover {
   text-decoration: underline;
+}
+
+.header .color-mode-button {
+  background: hsl(300, 70%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+
+.header .navigation {
+  margin-right: 1rem;
+}
+
+.header .navigation-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
