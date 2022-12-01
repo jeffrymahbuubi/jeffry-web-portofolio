@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -133,6 +133,8 @@ body {
   background-color: hsl(34, 41%, 90%);
 }
 
+/* Navigation : Styling */
+
 .navigation {
   list-style: none;
   background-color: hsl(32, 46%, 93%);
@@ -146,6 +148,7 @@ body {
 
 .navigation-items {
   /* border: 1px solid red; */
+  font-family: "Kanit", sans-serif;
   display: flex;
   gap: 25px;
   margin-left: 35px;
@@ -174,4 +177,104 @@ body {
   border-radius: 5px;
   color: white;
   margin-left: 237px;
+}
+
+/* Section : Header Styling */
+
+.header {
+  font-family: "Kanit", sans-serif;
+  font-size: 2em;
+  display: flex;
+  /* border: 1px solid red; */
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-picture {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.header-picture img {
+  width: 600px;
+  height: 600px;
+}
+
+.header-introduction {
+  /* border: 1px solid red; */
+  display: flex;
+  max-width: 50%;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.header-introduction h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: hsl(356, 68%, 41%);
+  padding: 1em 0;
+}
+
+.header-introduction h2 {
+  font-size: 96px;
+  color: #3a372d;
+  font-weight: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-introduction p {
+  color: #3a372d;
+  font-weight: 100;
+  font-size: 0.8em;
+  padding: 1em 0;
+}
+
+.header-button {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+}
+
+.social-media-button {
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: hsl(34, 41%, 85%);
+  color: #3a372d;
+  font-size: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border: none;
+}
+
+.resume-button {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  border: none;
+  color: #3a372d;
+  border-radius: 5px;
+  font-size: 0.5em;
+  letter-spacing: 0.1em;
+  background-color: hsl(356, 68%, 41%);
+  color: #fff;
+}
+
+.resume-button span {
+  margin-left: 15px;
+}
+
+.social-media-button:hover {
+  background-color: hsl(356, 68%, 41%);
+  color: hsl(34, 41%, 85%);
 }
