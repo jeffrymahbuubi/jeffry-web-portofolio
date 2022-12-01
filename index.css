@@ -1,85 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  background-color: hsl(31, 45%, 90%);
-  font-family: "Noto Sans", sans-serif;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
+/* Start of Styling CSS Code */
+body {
+  background-color: hsl(34, 41%, 90%);
 }
 
-.header .header-content {
+.navigation {
+  list-style: none;
   background-color: hsl(32, 46%, 93%);
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-}
-
-.header .header-logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.header span {
   font-family: "M Plus 1 Code", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  color: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.4rem;
+  align-items: center;
+  /* border: 1px solid red; */
 }
 
-.header img {
+.navigation-items {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 25px;
+  margin-left: 35px;
 }
 
-.header a {
-  font-family: "Noto Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
+.navigation-logo {
+  /* border: 1px solid red; */
+  gap: 0.5rem;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  margin-left: 560px;
+}
+
+.navigation,
+.navigation-items a {
   text-decoration: none;
-  color: hsl(0, 0%, 0%);
+  color: black;
 }
 
-.header li {
-  list-style-type: none;
-  display: inline;
-}
-
-.header .works {
-  line-height: 22px;
-}
-
-.header .posts {
-}
-
-.header .uses {
-}
-
-.header .source-code {
-}
-
-.header button {
-  border-radius: 6px;
-}
-
-.header a:hover {
-  text-decoration: underline;
-}
-
-.header .color-mode-button {
-  background: hsl(300, 70%, 20%);
-  color: hsl(0, 0%, 100%);
-  border: none;
+.navigation .dark-mode-button {
+  background: hsl(259, 58%, 59%);
   width: 35px;
   height: 35px;
-}
-
-.header .navigation {
-  margin-right: 1rem;
-}
-
-.header .navigation-items {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 237px;
 }
