@@ -374,3 +374,96 @@ body {
 }
 
 /* ------ Section : Education Styling End of Code ------*/
+
+/* Section : Works */
+
+.works {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  font-family: "Kanit", sans-serif;
+  font-size: 1em;
+}
+
+.works h1 {
+  font-size: 1.5em;
+  font-weight: 1000;
+  color: hsl(356, 68%, 45%);
+  line-height: 2em;
+}
+
+.works p {
+  font-size: 1.2em;
+  color: hsl(46.2, 12.6%, 20.2%);
+  line-height: 2em;
+}
+
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 68rem;
+  width: 91.666667%;
+}
+
+.works ul {
+  display: grid;
+  gap: 1em;
+  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .works ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .works ul {
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+  }
+}
+
+.works-items a {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  text-decoration: none;
+  color: black;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.works-items a h2 {
+  font-weight: 1000;
+  color: hsl(46.2, 12.6%, 20.2%);
+  font-size: 1.2em;
+}
+
+.works .works-items a p {
+  font-size: 1em;
+  color: hsl(46.2, 12.6%, 20.2%);
+  line-height: 1.5em;
+}
+
+.works-items .works-items-tools {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.works-items img {
+  border-radius: 0.25rem;
+  margin-top: 1em;
+}
+
+.works-items .works-see-more {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  margin-top: 0.5em;
+}
