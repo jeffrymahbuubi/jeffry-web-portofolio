@@ -135,32 +135,47 @@ body {
 
 /* Navigation : Styling */
 
-.navigation {
+.navigation-layout {
   list-style: none;
   background-color: hsl(32, 46%, 93%);
-  font-family: "M Plus 1 Code", sans-serif;
-  display: flex;
-  justify-content: flex-start;
-  padding: 0.4rem;
-  align-items: center;
-  /* border: 1px solid red; */
+  position: sticky;
 }
 
 .navigation-items {
-  /* border: 1px solid red; */
   font-family: "Kanit", sans-serif;
+  font-weight: lighter;
   display: flex;
-  gap: 25px;
-  margin-left: 35px;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 68rem;
+  width: 91.67%;
 }
 
-.navigation-logo {
-  /* border: 1px solid red; */
-  gap: 0.5rem;
-  font-weight: bold;
-  align-items: center;
+@media (min-width: 768px) {
+  .navigation-items {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+.navigation-items-lists {
   display: flex;
-  margin-left: 560px;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5rem;
+  gap: 2em;
+}
+
+.home a {
+  display: flex;
+  align-items: center;
+  font-family: "M Plus 1 Code", sans-serif;
+  font-weight: bold;
+  gap: 0.5rem;
 }
 
 .navigation,
@@ -169,7 +184,7 @@ body {
   color: black;
 }
 
-.navigation .dark-mode-button {
+.dark-mode-button {
   background: hsl(259, 58%, 59%);
   width: 35px;
   height: 35px;
@@ -177,6 +192,7 @@ body {
   border-radius: 5px;
   color: white;
   margin-left: 237px;
+  font-size: 1em;
 }
 
 /* ------ Section : Navigation Styling End of Code ------*/
