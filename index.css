@@ -186,76 +186,93 @@ body {
 .header {
   font-family: "Kanit", sans-serif;
   font-size: 1em;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: calc(100vh - 82px);
+}
+
+.header .layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+}
+
+.header-items {
   display: flex;
-  /* border: 1px solid red; */
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 140px 0 0;
+}
+
+@media (min-width: 768px) {
+  .header-items {
+    flex-wrap: nowrap;
+  }
 }
 
 .header-picture {
-  /* border: 1px solid red; */
-  margin-top: 80px;
-  transform: translateY(-60px);
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
 
-.header-picture,
-.circle {
-  /* border: 1px solid red; */
-  height: 400px;
-  width: 400px;
+@media (min-width: 768px) {
+  .header-picture {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+.header-picture-layout {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.header-picture img {
+  height: 450px;
+  width: 450px;
   background: linear-gradient(
     180deg,
     rgba(163, 149, 131, 1) 0%,
     rgba(163, 149, 131, 0) 100%
   );
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
+  border-radius: 0.25%;
 }
 
-.header-picture img {
-  /* border: 1px solid red; */
-  transform: translateY(-200px);
-  width: 600px;
-  height: 600px;
+@media (min-width: 1024px) {
+  .header-picture img {
+    border-radius: 50%;
+  }
 }
 
 .header-introduction {
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
   font-size: 2em;
-  width: 870px;
-  height: 460px;
 }
 
 .header-introduction h1 {
   font-weight: 1000;
   color: hsl(356, 68%, 41%);
   padding-bottom: 0.5em;
-  font-size: 2.5rem;
+  font-size: 1.875rem;
 }
 
 .header-introduction h2 {
   color: hsl(46.2, 12.6%, 20.2%);
   font-weight: 1000;
-  display: flex;
-  flex-direction: column;
-  font-size: 3em;
+  font-size: 3.5rem;
 }
 
 .header-introduction p {
   color: hsl(46.2, 12.6%, 20.2%);
   font-weight: 100;
-  font-size: 0.65em;
+  font-size: 1.25rem;
   padding: 1.5em 0;
   line-height: 30px;
 }
 
 .header-button {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: flex;
   align-items: center;
