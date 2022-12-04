@@ -313,29 +313,36 @@ body {
 /* Section : Education */
 
 .education {
-  /* border: 1px solid red; */
+  padding-bottom: 80px;
+  padding-top: 80px;
   font-family: "Kanit", sans-serif;
   font-size: 1em;
-  margin: 70px 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+}
+
+.education .layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 68rem;
+  width: 91.666667%;
 }
 
 .education h1 {
   color: hsl(356, 68%, 41%);
   font-weight: 1000;
   font-size: 1.5em;
-  margin-bottom: 1em;
-  transform: translateX(-90px);
+  line-height: 2em;
+}
+
+.education p {
+  font-size: 1.2em;
+  color: hsl(46.2, 12.6%, 20.2%);
+  line-height: 2em;
 }
 
 .education-items {
-  /* border: 1px solid red; */
-  width: 1087px;
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .education-items-content {
@@ -397,7 +404,7 @@ body {
   line-height: 2em;
 }
 
-.layout {
+.works .layout {
   margin-left: auto;
   margin-right: auto;
   max-width: 68rem;
@@ -407,7 +414,6 @@ body {
 .works ul {
   display: grid;
   gap: 1em;
-  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   margin-top: 1rem;
   box-sizing: border-box;
 }
@@ -431,20 +437,20 @@ body {
   align-items: flex-start;
   text-decoration: none;
   color: black;
-  border: 1px solid red;
+  border: 1px solid hsl(46, 12%, 20%);
   border-radius: 5px;
   padding: 1rem;
 }
 
 .works-items a h2 {
   font-weight: 1000;
-  color: hsl(46.2, 12.6%, 20.2%);
+  color: hsl(46, 12%, 20%);
   font-size: 1.2em;
 }
 
 .works .works-items a p {
   font-size: 1em;
-  color: hsl(46.2, 12.6%, 20.2%);
+  color: hsl(46, 12%, 20%);
   line-height: 1.5em;
 }
 
@@ -466,4 +472,15 @@ body {
   align-items: center;
   gap: 0.3em;
   margin-top: 0.5em;
+}
+
+.see-more-works {
+  text-decoration: none;
+  padding: 0.5rem 0.25rem;
+  margin-top: 1rem;
+  color: hsl(46.2, 12.6%, 20.2%);
+  font-weight: bold;
+  border-radius: 0.25rem;
+  border: 1px solid hsl(46, 12%, 20%);
+  display: inline-flex;
 }
